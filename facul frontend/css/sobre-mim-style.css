@@ -1,0 +1,81 @@
+/* Estilização do corpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/fundo.png'); 
+    /*dois pontos antes de "/" significa um "." saindo da pasta "css e 
+    outro "." para chegar na pasta "img" */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 3px solid purple;
+}
+
+.topo {
+    text-align: left;
+    margin-bottom: 20px; /* Espaço entre o topo e a tabela */
+    display: flex;
+}
+
+.texto-topo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 15px; /* Espaço entre o texto e os botões */
+}
+
+.botoes button {
+    align-items: right;
+    padding: 10px 20px;
+    background-color: #231fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #69175f;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+    margin: 0 auto;
+}
+
+/* Células */
+td {
+    padding: 10px 15px; /* Espaçamento interno */
+    border-bottom: 1px solid #ddd; /* Linha divisória */
+    text-align: left; /* Alinhamento do texto */
+    vertical-align: top; /* Alinha o texto no topo */
+}
+
+/* Primeira coluna */
+td:first-child {
+    font-weight: bold; /* Destaque para os títulos */
+    color: #231fbf; /* Cor da coluna da esquerda */
+    width: 30%; /* Define largura fixa para a primeira coluna */
+}
+
+/* Última linha */
+tr:last-child td {
+    border-bottom: none; /* Remove a linha inferior da última linha */
+}

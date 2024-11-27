@@ -1,0 +1,84 @@
+/* Estilização do Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    /* Centraliza todo o conteúdo na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilização do Container */
+.container {
+    height: fit-content;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 3px solid purple;
+}
+/* Estilização do Topo */
+.topo {
+    text-align: left;
+    margin-bottom: 20px; /* Espaço entre o topo e a tabela */
+    display: flex;
+}
+
+.titulo1 {
+    font-family: 'Poppins', sans-serif;
+    color: #231fbf; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    background-color: #DDA0DD; /* Fundo da célula */
+}
+
+.titulo3 {
+    font-family: 'Poppins', sans-serif;
+    color: OrangeRed; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font: size 10ch;
+}
+
+.texto-topo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 15px; /* Espaço entre o texto e os botões */
+}
+
+.botoes button {
+    align-items: right;
+    padding: 10px 20px;
+    background-color: #231fbf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    background-color: #69175f;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alterna cores das linhas */
+}
